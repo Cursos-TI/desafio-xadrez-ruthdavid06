@@ -3,20 +3,24 @@
 int main(){ 
     printf("Desafio Xadrez!!!\n");
 
+    const int movimentoTorre = 5;
+    const int movimentoBispo = 5;
+    const int movimentoRainha = 8;
+
     int torre, rainha = 1, bispo = 1;
 
     //Mover a Torre 5 casas para direita
     printf("\nMovimento da peça Torre:\n");
-    for (torre = 1; torre <= 5; torre++)
+    for (torre = 1; torre <= movimentoTorre; torre++)
     {
         printf("Direita\n"); // imprime a direção do movimento da peça
     }
 
-    //Mover o Bispo 5 casas na diagonal
+    //Mover o Bispo 5 casas na diagonal superior direita 
     printf("\nMovimento da peça Bispo:\n");
-    while (bispo <= 5)
+    while (bispo <= movimentoBispo)
     {
-        printf("Cima, Direita\n"); // imprime a direção do movimento da peça na diagonal (direita para cima)
+        printf("Cima, Direita\n"); // imprime a direção do movimento da peça na diagonal (cima + direita)
         bispo++;
     } 
 
@@ -26,7 +30,7 @@ int main(){
     {
         printf("Esquerda\n"); // imprime a direção do movimento da peça
         rainha++;
-    } while (rainha <= 8);
+    } while (rainha <= movimentoRainha);
 
     return 0;
 }
