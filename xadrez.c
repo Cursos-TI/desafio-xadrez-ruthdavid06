@@ -6,7 +6,7 @@ int main(){
     const int movimentoTorre = 5;
     const int movimentoBispo = 5;
     const int movimentoRainha = 8;
-    int movimentoCompleto = 1;
+    int movimentoCompleto = 1; // movimento do cavalo em L
 
     int torre, rainha = 1, bispo = 1;
 
